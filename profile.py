@@ -12,7 +12,7 @@ for i in range(2):
   if i ==0:
       node = request.XenVM("webserver")
       
-   else
+   else:
       node = request.XenVM("observer")
     
     node.roundtable_control_ip = "true"
