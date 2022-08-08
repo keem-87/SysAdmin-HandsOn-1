@@ -13,7 +13,7 @@ for i in "${array[@]}"; do
         addIP = "$(grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' <<< "$i")"
         addcountry = "$(geoiplookup -s $addIP)"
         addDate = $(echo "$i" | cut -c1-15)
-        echo "$ipadd ""$addcountry ""$addDate" >> /var/webserver_log/unauthorized.log
+        echo "$addIP ""$addcountry ""$addDate" >> /var/webserver_log/unauthorized.log
 done
 sudo rm holding.log
 
