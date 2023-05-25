@@ -1,1 +1,1 @@
-# SysAdmin-HandsOn-1
+# SysAdmin-HandsOn-Lab
